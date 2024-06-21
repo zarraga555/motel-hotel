@@ -11,6 +11,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.0",
+        "mhmiton/laravel-modules-livewire": "^3.0",
         "nwidart/laravel-modules": "^11.0"
     },
     "require-dev": {
@@ -53,7 +54,12 @@
     "extra": {
         "laravel": {
             "dont-discover": []
-        }
+        },
+        "merge-plugin": {
+        "include": [
+            "Modules/*/composer.json"
+        ]
+    }
     },
     "config": {
         "optimize-autoloader": true,
